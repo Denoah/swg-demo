@@ -1,8 +1,8 @@
-package com.example.swgdemo.book.service;
+package com.example.swgdemo.core.book.service;
 
-import com.example.swgdemo.book.domain.Book;
-import com.example.swgdemo.book.domain.req.BookAddReq;
-import com.example.swgdemo.book.repo.BookRepo;
+import com.example.swgdemo.core.book.domain.Book;
+import com.example.swgdemo.core.book.domain.req.BookAddReq;
+import com.example.swgdemo.core.book.repo.BookRepo;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;

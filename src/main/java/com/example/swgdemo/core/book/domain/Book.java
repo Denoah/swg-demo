@@ -1,5 +1,7 @@
-package com.example.swgdemo.book.domain;
+package com.example.swgdemo.core.book.domain;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 
@@ -7,6 +9,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "swg_book")
+@ApiModel(description = "Книга")
 public class Book {
     @GenericGenerator(
             name = "swg_book_seq",
@@ -22,12 +25,15 @@ public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "swg_book_seq")
     @Column(name = "id", nullable = false, updatable = false)
+    @ApiModelProperty(notes = "id книги")
     private Long id;
 
     @Column(name = "author")
+    @ApiModelProperty(notes = "Автор")
     private String author;
 
     @Column(name = "title")
+    @ApiModelProperty(notes = "Название")
     private String title;
 
     public Long getId() {

@@ -1,4 +1,4 @@
-package com.example.swgdemo.book.domain.req;
+package com.example.swgdemo.core.book.domain.req;
 
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
